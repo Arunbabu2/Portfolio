@@ -1,0 +1,413 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+
+    color:white;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+    background:transparent;
+    justify-content:space-between;
+    display: flex;
+    align-items: center;
+}
+/* logo */
+.logo{
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(20, 20, 22);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;   
+}
+
+/* navbar */
+
+.navbar a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover ,
+.navbar a.active{
+    color:rgb(156, 39, 176);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+/* home */
+.home{
+    height: 100vh;
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home h1{
+    text-shadow: 2px 4px 4px;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(20, 20, 22) ;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;   
+}
+/* .home-content .text-animate{
+    position: relative;
+    width: 32.8rem;
+}
+.home-content .text-animate h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+} */
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(156, 39, 176);
+}
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(20, 20, 22) ;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;   
+}
+.home-content p{
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(20, 20, 22) ;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;   
+}
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.home-content .btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(20, 20, 22) ;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s; 
+    z-index: 2;  
+}
+/* button */
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(156, 39, 176);
+    border: 2px solid  rgb(156, 39, 176);
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover{
+    color:  rgb(156, 39, 176);
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color:  rgb(156, 39, 176);
+}
+.btn-box a:nth-child(2):hover{
+    color: black;
+}
+.btn-box a:nth-child(2)::before{
+    background: rgb(156, 39, 176);
+}
+.btn-box a::before{
+    position:absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:rgb(20, 20, 22);
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(20, 20, 22) ;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s; 
+    z-index: 2;  
+}
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(156, 39, 176);
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(156, 39, 176);
+    border-radius: 15px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover{
+    color: black;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:rgb(156, 39, 176);
+    z-index: -1;
+}
+.home-sci a:hover::before{
+    width: 100%;
+    transition: .5s;
+}
+/* .home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+.home-imgHover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150%;
+    height: 100%;
+    background:rgb(3, 168, 244) ;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s; 
+    z-index: 100;  
+}
+.home-imgHover:hover{
+    background: rgb(3, 168, 244);
+    opacity: .8;
+} */
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
+/* about */
+
+.about{
+    height: 100vh;
+    background-color: rgb(20, 20, 22);
+    /* background: url(Untitled\ Project\ \(1\).jpg) no-repeat; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+    padding: 0 10%;
+}
+.heading{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    align-items: center;   
+}
+.about-img{
+    /* position: relative; */
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    }
+.about-img img{
+    width: 50%;
+    border-radius: 25px;
+    border: .2rem solid white;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.btn-box-btns{
+    justify-content: center;
+    align-items: center;
+}
+.btn-box-btns a{
+    border: 2px solid white;
+    background-color: rgb(156, 39, 176);
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 5px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.btn-box-btns a:hover{
+    color: white;
+    background-color:transparent;
+    text-shadow:rgb(156, 39, 176) 5px 5px 5px;
+    box-shadow: rgb(156, 39, 176) 0px 1px 7px;
+}
+/* .about-img .circle-spin{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(0);
+    width: 70%;
+    height: 80%;
+    border-radius: 50%;
+    border-top: .2rem solid ;
+    border-bottom: .2rem solid;
+    border-left: .2rem solid silver;
+    border-right: .2rem solid silver;
+} */
+
+/* Education */
+
+.education{
+    background:rgb(20, 20, 22);
+    width: 100%;
+    height: 100%;
+}
+#edu{
+    text-align: center;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.edu{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+.pg{
+    border: 2px solid rgb(156, 39, 176);
+    width: 450px;
+    height: 150px;
+    padding: 10px;
+    gap: 2rem;
+    margin: 30px 50px;
+}
+span{
+    font-weight: 900;
+}
+.skills h2{
+    background:rgb(20, 20, 22);
+}
+.skl{
+    background:rgb(20, 20, 22);
+    border: 2px solid rgb(156, 39, 176);
+    
+}
+.skl a{
+    text-decoration: none;
+    color: azure;
+}
+.skl li{
+    border-width: 250px;
+}
